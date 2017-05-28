@@ -21,6 +21,7 @@ window.addEventListener("load", function() {
         var move = JSON.parse(e.data);
         console.dir(move);
         if (move.type == "start") {
+            document.getElementById("waiting").style.display = "none";
             document.getElementById("game").className = "gameStarted"
         }
         else if (move.type == "move") {
