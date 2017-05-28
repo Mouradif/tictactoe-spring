@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+	<div class="row">
+		<div class="col-xs-9">
+			<table border="1" id="game">
+				<tr><td id="r0c0"></td><td id="r0c1"></td><td id="r0c2"></td></tr>
+				<tr><td id="r1c0"></td><td id="r1c1"></td><td id="r1c2"></td></tr>
+				<tr><td id="r2c0"></td><td id="r2c1"></td><td id="r2c2"></td></tr>
+			</table>
+		</div>
+		<div class="col-xs-3" id="scoreboard">
+			<p>Score O : 0</p>
+			<p>Score X : 0</p>
+		</div>
+	</div>
+
+</body>
+</html>

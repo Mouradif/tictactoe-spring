@@ -1,0 +1,37 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.3.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-data-redis')
+	compile('org.springframework.boot:spring-boot-starter-websocket')
+	compile("org.webjars:webjars-locator")
+	compile("org.webjars:sockjs-client:1.0.2")
+	compile("org.webjars:stomp-websocket:2.3.3")
+	compile("org.webjars:bootstrap:3.3.7")
+	compile 'org.webjars.npm:lodash:4.17.4'
+	compile 'org.webjars.npm:jquery:3.2.1'
+	compile group: 'org.json', name: 'json', version: '20090211'
+
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}

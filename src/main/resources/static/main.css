@@ -1,0 +1,17 @@
+.gameStarted td {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    background: #eee;
+}
+
+.gameStarted td.opponent {
+    color: red;
+}
+
+.gameStarted tr:nth-child(odd) td:nth-child(even), .gameStarted tr:nth-child(even) td:nth-child(odd) {
+    background: #ccc;
+}
